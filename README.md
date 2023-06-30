@@ -1,14 +1,5 @@
 # Delving Deeper into the Decoder for Video Captioning
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) ![DeepLearning](https://img.shields.io/badge/VideoCaptioning-DeepLearning-orange) ![Github Watchers](https://img.shields.io/github/watchers/WingsBrokenAngel/delving-deeper-into-the-decoder-for-video-captioning?color=brightgreen) ![GitHub stars](https://img.shields.io/github/stars/WingsBrokenAngel/delving-deeper-into-the-decoder-for-video-captioning?color=brightgreen) ![GitHub forks](https://img.shields.io/github/forks/WingsBrokenAngel/delving-deeper-into-the-decoder-for-video-captioning?color=brightgreen&label=Fork) ![](https://img.shields.io/badge/ECAIpaper-SourceCode-yellow) ![License](https://img.shields.io/github/license/WingsBrokenAngel/delving-deeper-into-the-decoder-for-video-captioning.svg?color=brightgreen&style=flat)
-## Table of Contents
-1. [Description](#description)
-2. [Requirement](#requirement)
-3. [Manual](#manual)
-4. [Results](#results)
-    1. [Comparison on Youtube2Text](#cy)
-    2. [Comparison on MSR-VTT](#cm)
-5. [Data](#data)
-6. [Citation](#citation)
 
 ## <a name="description"></a> Description
 This repository is the source code for the paper named [***Delving Deeper into the Decoder for Video Captioning***](https://arxiv.org/abs/2001.05614).  
@@ -42,19 +33,9 @@ If you need more information about how to generate training, validating and test
  Specify the GPU you want to use by modifying `CUDA_VISIBLE_DEVICES` value. `name` will be used in the name of saved model during training. Specify the needed data paths by modifying `corpus`, `ecores`, `tag` and `ref` values. `test` refers to the path of the saved model which is to be tested. Do not give a parameter to `test` if you want to train a model.
 5. After completing the configuration of the bash file, then `bash run_model.sh` for training or testing.
 
+   
 ---
-## <a name="results"></a> Results
 
-### <a name="cy"></a> Comparison on Youtube2Text
-
-![MSVD Results](./imgs/msvd_results.png)
-
-### <a name="cm"></a> Comparison on MSR-VTT
-
-![MSR-VTT Results](./imgs/msrvtt_results.png)
-
-
----
 ## <a name="data"></a> Data
 
 ### <a name="dmsvd"></a> MSVD
@@ -73,18 +54,3 @@ If you need more information about how to generate training, validating and test
 [GoogleDrive](https://drive.google.com/file/d/1AJdKFG64ztmLDBg4U4uo7_fjINrpksE6/view?usp=sharing)
     * SHA-256 fb04fd2d29900f7f8a712b6d2352e8227acd30173274b64a38fcea6a608e4a8e
 
----
-
-### <a name="citation"></a> Citation
-```
-@article{chen2020delving,
-	title={Delving Deeper into the Decoder for Video Captioning},
-	author={Haoran Chen and Jianmin Li and Xiaolin Hu},
-	journal={CoRR},
-    	archivePrefix={arXiv},
-	primaryClass={cs.CV},
-	url={https://arxiv.org/abs/2001.05614},
-	eprint={2001.05614},
-	year={2020}
-}
-```
